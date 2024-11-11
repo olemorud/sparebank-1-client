@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Close Tab</title>
+    <script>
+        function closeTab() {
+            // Check if the window was opened by JavaScript
+            if (window.close) {
+                window.close();
+            } else {
+                alert("This tab cannot be closed automatically. Please close it manually.");
+            }
+        }
+    </script>
+</head>
+<body onload="closeTab()">
+    <h1>The tab will now close.</h1>
+</body>
+</html>
