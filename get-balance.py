@@ -167,7 +167,7 @@ def main():
     )
 
     for acc in hw.json()['accounts']:
-        print(f'{(acc["description"] + ':').ljust(25)} {acc["balance"]} {acc["currencyCode"]}')
+        print(f'{(acc["description"] + ':'):<25} {acc["balance"]:>10.0f} {acc["currencyCode"]}')
 
 if __name__ == "__main__":
     main()
